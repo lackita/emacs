@@ -1,0 +1,9 @@
+# name: SimpleTest ({ ... })
+# key: test
+# --
+SimpleTest({
+NAME => q{${1:test description}},
+SUB => sub {
+$0
+},
+});

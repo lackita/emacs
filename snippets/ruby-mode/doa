@@ -1,0 +1,6 @@
+# name: do | ... | ... end
+# key: doa
+# --
+do |${1:arguments}|
+  $0
+end

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: function ... ( ... ){ ... }
+# key: function
+# --
+// ${3:comment}
+function ${1:FunctionName}(${2:arguments}) {
+$0
+}

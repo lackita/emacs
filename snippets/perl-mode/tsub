@@ -1,0 +1,7 @@
+# name: sub ..._Test { ... }
+# key: tsub
+# --
+# $1
+sub ${1:FunctionName}_Test {
+$0
+}

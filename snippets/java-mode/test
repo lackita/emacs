@@ -1,0 +1,7 @@
+# name: @Test public void ... { ... }
+# key: test
+# --
+@Test
+public void ${1:function_name} {
+$0
+}
