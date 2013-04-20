@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <13/04/18 06:58:23 c:/Users/cwilliams/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <13/04/20 09:29:38 /home/lackita/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -24,8 +24,6 @@
   ("ls" "/bin/ls --color=never")
   ("gid-string" "lackita")
   ("uid-integer" 1000))
- (["plink" "cwilliams" "regression212" nil]
-  nil)
  (["plink" nil "dev202" nil]
   ("uname" "Linux 2.6.18-274.18.1.el5")
   ("test" "test")
@@ -46,4 +44,24 @@
   ("remote-encoding" "base64")
   ("remote-decoding" "base64 -d -i")
   ("inline-compress" nil)
-  ("inline-decompress" nil)))
+  ("inline-decompress" nil))
+ (["ssh" "lackita" "lackita.zapto.org" nil]
+  ("uname" "Linux 3.2.0-40-generic-pae")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("~" "/home/lackita")
+  ("file-exists" "test -e")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1000)
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "base64")
+  ("remote-decoding" "base64 -d -i")))
