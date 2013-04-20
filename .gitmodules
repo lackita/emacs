@@ -1,6 +1,6 @@
 [submodule "ace-jump-mode"]
-	path = ace-jump-mode
-	url = ./elisp/ace-jump-mode/.git
+	path = elisp/ace-jump-mode
+	url = https://github.com/winterTTr/ace-jump-mode.git
 [submodule "cperl-mode"]
-	path = cperl-mode
-	url = ./elisp/cperl-mode/.git
+	path = elisp/cperl-mode
+	url = https://github.com/jrockway/cperl-mode.git
