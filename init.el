@@ -45,7 +45,7 @@
 									  ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO")
 									  ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO")
 									  ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
- '(org-agenda-files (quote ("~/Dropbox/org/work.org" "~/Dropbox/org/travel.org" "~/Dropbox/org/timing.org" "~/Dropbox/org/stuff.org" "~/Dropbox/org/social.org" "~/Dropbox/org/sites.org" "~/Dropbox/org/scrum.org" "~/Dropbox/org/routine.org" "~/Dropbox/org/reading.org" "~/Dropbox/org/programming.org" "~/Dropbox/org/pet.org" "~/Dropbox/org/organization.org" "~/Dropbox/org/minimalism.org" "~/Dropbox/org/membership.org" "~/Dropbox/org/meals.org" "~/Dropbox/org/london.org" "~/Dropbox/org/home.org" "~/Dropbox/org/health.org" "~/Dropbox/org/groceries.org" "~/Dropbox/org/gifts.org" "~/Dropbox/org/games.org" "~/Dropbox/org/from-mobile.org" "~/Dropbox/org/friends.org" "~/Dropbox/org/finances.org" "~/Dropbox/org/finances/reimbursements.org" "~/Dropbox/org/finances/phone.org" "~/Dropbox/org/finances/loans.org" "~/Dropbox/org/finances/credit_cards.org" "~/Dropbox/org/finances/banks.org" "~/Dropbox/org/family.org" "~/Dropbox/org/entertainment.org" "~/Dropbox/org/education.org" "~/Dropbox/org/devices.org" "~/Dropbox/org/career/phd.org" "~/Dropbox/org/career/new_job.org" "~/Dropbox/org/career/advisory_board.org")))
+ '(org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
  '(org-agenda-include-diary t)
  '(org-agenda-skip-deadline-prewarning-if-scheduled t)
  '(org-agenda-skip-scheduled-if-done t)
@@ -141,7 +141,7 @@
 									 (mc/mark-all-like-this)))
 
 (require 'ace-jump-mode)
-(define-key global-map (kbd "C-;") 'ace-jump-mode)
+p(define-key global-map (kbd "C-;") 'ace-jump-mode)
 
 (fset 'block-comment
    [?\C-s ?# ?# ?# ?\C-a ?\C-k ?\C-  ?\C-s ?d ?e ?s ?c ?\C-a ?\C-n ?\C-w ?\C-s ?# ?# ?# ?\C-a ?\C-k ?\C-x ?\C-x ?\M-% ?\C-i ?\C-m ?  ?\C-m ?!])
