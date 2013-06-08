@@ -1,3 +1,5 @@
+(require 'find-lisp)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,14 +41,20 @@
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(org-agenda-files (quote ("~/Dropbox/org")))
+ '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO") ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO") ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
+ '(org-agenda-files (quote ("c:/Users/cwilliams/Dropbox/org/work.org" "c:/Users/cwilliams/Dropbox/org/travel.org" "c:/Users/cwilliams/Dropbox/org/timing.org" "c:/Users/cwilliams/Dropbox/org/stuff.org" "c:/Users/cwilliams/Dropbox/org/social.org" "c:/Users/cwilliams/Dropbox/org/sites.org" "c:/Users/cwilliams/Dropbox/org/scrum.org" "c:/Users/cwilliams/Dropbox/org/routine.org" "c:/Users/cwilliams/Dropbox/org/reading.org" "c:/Users/cwilliams/Dropbox/org/programming.org" "c:/Users/cwilliams/Dropbox/org/pet.org" "c:/Users/cwilliams/Dropbox/org/organization.org" "c:/Users/cwilliams/Dropbox/org/minimalism.org" "c:/Users/cwilliams/Dropbox/org/membership.org" "c:/Users/cwilliams/Dropbox/org/meals.org" "c:/Users/cwilliams/Dropbox/org/london.org" "c:/Users/cwilliams/Dropbox/org/home.org" "c:/Users/cwilliams/Dropbox/org/health.org" "c:/Users/cwilliams/Dropbox/org/groceries.org" "c:/Users/cwilliams/Dropbox/org/gifts.org" "c:/Users/cwilliams/Dropbox/org/games.org" "c:/Users/cwilliams/Dropbox/org/from-mobile.org" "c:/Users/cwilliams/Dropbox/org/friends.org" "c:/Users/cwilliams/Dropbox/org/finances.org" "c:/Users/cwilliams/Dropbox/org/finances/reimbursements.org" "c:/Users/cwilliams/Dropbox/org/finances/phone.org" "c:/Users/cwilliams/Dropbox/org/finances/loans.org" "c:/Users/cwilliams/Dropbox/org/finances/credit_cards.org" "c:/Users/cwilliams/Dropbox/org/finances/banks.org" "c:/Users/cwilliams/Dropbox/org/family.org" "c:/Users/cwilliams/Dropbox/org/entertainment.org" "c:/Users/cwilliams/Dropbox/org/education.org" "c:/Users/cwilliams/Dropbox/org/devices.org" "c:/Users/cwilliams/Dropbox/org/career/phd.org" "c:/Users/cwilliams/Dropbox/org/career/new_job.org" "c:/Users/cwilliams/Dropbox/org/career/advisory_board.org")))
  '(org-agenda-include-diary t)
+ '(org-agenda-skip-deadline-prewarning-if-scheduled t)
+ '(org-agenda-skip-scheduled-if-done t)
  '(org-agenda-window-setup (quote current-window))
+ '(org-archive-location "~/Dropbox/org/archive/%s_archive::")
  '(org-directory "~/Dropbox/org")
  '(org-habit-show-habits-only-for-today nil)
+ '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID="))))
  '(org-log-done (quote time))
  '(org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
  '(org-modules (quote (org-bbdb org-bibtex org-docview org-gnus org-info org-jsinfo org-habit org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-checklist org-learn org-registry org2rem)))
+ '(org-scheduled-past-days 1000000)
  '(paren-mode (quote paren) nil (paren))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(scroll-bar-mode nil)

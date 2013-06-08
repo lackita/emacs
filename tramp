@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <13/04/20 09:17:40 c:/Users/cwilliams/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <13/06/06 14:28:27 c:/Users/cwilliams/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -23,14 +23,14 @@
   ("remote-encoding" "base64")
   ("remote-decoding" "base64 -d -i"))
  (["plink" nil "dev202" nil]
-  ("uname" "Linux 2.6.18-274.18.1.el5")
+  ("uname" "Linux 2.6.39-400.24.1.el6uek.x86_64")
   ("test" "test")
   ("remote-path"
    ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
   ("remote-shell" "/bin/sh")
   ("busybox" nil)
-  ("file-exists" "test -e")
   ("stat" "\\stat")
+  ("file-exists" "test -e")
   ("id" "/usr/bin/id")
   ("gid-integer" 100)
   ("readlink" "\\readlink")
@@ -38,10 +38,6 @@
   ("local-decoding" base64-decode-region)
   ("remote-encoding" "base64")
   ("remote-decoding" "base64 -d -i")
-  ("inline-compress" nil)
-  ("inline-decompress" nil)
-  ("ls" "/bin/ls --color=never")
   ("perl-file-spec" t)
   ("perl-cwd-realpath" t)
-  ("perl" "\\perl")
-  ("uid-integer" 1153)))
+  ("perl" "\\perl")))
