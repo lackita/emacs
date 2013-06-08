@@ -1,3 +1,5 @@
+(require 'find-lisp)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,15 +41,23 @@
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("h" tags "-home-work-errands-waiting-maybe-SCHEDULED>\"<now>\"/TODO") ("o" tags "-internet-work-home-errands-waiting-maybe-SCHEDULED>\"<now>\"/TODO"))))
- '(org-agenda-files (quote ("~/Dropbox/org")))
+ '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo)))
+									  ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO")
+									  ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO")
+									  ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
+ '(org-agenda-files (quote ("~/Dropbox/org/work.org" "~/Dropbox/org/travel.org" "~/Dropbox/org/timing.org" "~/Dropbox/org/stuff.org" "~/Dropbox/org/social.org" "~/Dropbox/org/sites.org" "~/Dropbox/org/scrum.org" "~/Dropbox/org/routine.org" "~/Dropbox/org/reading.org" "~/Dropbox/org/programming.org" "~/Dropbox/org/pet.org" "~/Dropbox/org/organization.org" "~/Dropbox/org/minimalism.org" "~/Dropbox/org/membership.org" "~/Dropbox/org/meals.org" "~/Dropbox/org/london.org" "~/Dropbox/org/home.org" "~/Dropbox/org/health.org" "~/Dropbox/org/groceries.org" "~/Dropbox/org/gifts.org" "~/Dropbox/org/games.org" "~/Dropbox/org/from-mobile.org" "~/Dropbox/org/friends.org" "~/Dropbox/org/finances.org" "~/Dropbox/org/finances/reimbursements.org" "~/Dropbox/org/finances/phone.org" "~/Dropbox/org/finances/loans.org" "~/Dropbox/org/finances/credit_cards.org" "~/Dropbox/org/finances/banks.org" "~/Dropbox/org/family.org" "~/Dropbox/org/entertainment.org" "~/Dropbox/org/education.org" "~/Dropbox/org/devices.org" "~/Dropbox/org/career/phd.org" "~/Dropbox/org/career/new_job.org" "~/Dropbox/org/career/advisory_board.org")))
  '(org-agenda-include-diary t)
+ '(org-agenda-skip-deadline-prewarning-if-scheduled t)
+ '(org-agenda-skip-scheduled-if-done t)
  '(org-agenda-window-setup (quote current-window))
+ '(org-archive-location "~/Dropbox/org/archive/%s_archive::")
  '(org-directory "~/Dropbox/org")
  '(org-habit-show-habits-only-for-today nil)
+ '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID="))))
  '(org-log-done (quote time))
  '(org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
  '(org-modules (quote (org-bbdb org-bibtex org-docview org-gnus org-info org-jsinfo org-habit org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-checklist org-learn org-registry org2rem)))
+ '(org-scheduled-past-days 1000000)
  '(paren-mode (quote paren) nil (paren))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(scroll-bar-mode nil)
