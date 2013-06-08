@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: befe
+# key: befe
+# --
+before(:each) do
+  $0
+end
