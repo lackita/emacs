@@ -1,5 +1,3 @@
-(require 'find-lisp)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,20 +39,23 @@
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO") ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO") ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
- '(org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
+ '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO") ("h" "Home" tags "-errands-doctor-adrianna-phone-nook-netbook-calls-internet-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO") ("u" "Inside" tags "+home-outside-maybe-waiting-SCHEDULED>\"<now>\"/TODO") ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
+ '(org-agenda-files (quote ("c:/Users/cwilliams/Dropbox/org/work/teaching.org" "c:/Users/cwilliams/Dropbox/org/work/side_projects.org" "c:/Users/cwilliams/Dropbox/org/work/regressions.org" "c:/Users/cwilliams/Dropbox/org/work/qa_queue.org" "c:/Users/cwilliams/Dropbox/org/work/learning.org" "c:/Users/cwilliams/Dropbox/org/work/build.org" "c:/Users/cwilliams/Dropbox/org/work/administrative.org" "c:/Users/cwilliams/Dropbox/org/stuff.org" "c:/Users/cwilliams/Dropbox/org/social/vacation.org" "c:/Users/cwilliams/Dropbox/org/social/trek.org" "c:/Users/cwilliams/Dropbox/org/social/sara.org" "c:/Users/cwilliams/Dropbox/org/social/possible_groups.org" "c:/Users/cwilliams/Dropbox/org/social/outings.org" "c:/Users/cwilliams/Dropbox/org/social/mom.org" "c:/Users/cwilliams/Dropbox/org/social/miscellaneous.org" "c:/Users/cwilliams/Dropbox/org/social/grandma.org" "c:/Users/cwilliams/Dropbox/org/social/dad.org" "c:/Users/cwilliams/Dropbox/org/social/adrianna.org" "c:/Users/cwilliams/Dropbox/org/sites.org" "c:/Users/cwilliams/Dropbox/org/shipping.org" "c:/Users/cwilliams/Dropbox/org/scrum.org" "c:/Users/cwilliams/Dropbox/org/routine.org" "c:/Users/cwilliams/Dropbox/org/reading.org" "c:/Users/cwilliams/Dropbox/org/programming.org" "c:/Users/cwilliams/Dropbox/org/politics.org" "c:/Users/cwilliams/Dropbox/org/pet.org" "c:/Users/cwilliams/Dropbox/org/organization.org" "c:/Users/cwilliams/Dropbox/org/miscellaneous.org" "c:/Users/cwilliams/Dropbox/org/meals.org" "c:/Users/cwilliams/Dropbox/org/london.org" "c:/Users/cwilliams/Dropbox/org/loaned_books.org" "c:/Users/cwilliams/Dropbox/org/home/outside.org" "c:/Users/cwilliams/Dropbox/org/home/membership.org" "c:/Users/cwilliams/Dropbox/org/home/inside.org" "c:/Users/cwilliams/Dropbox/org/home/donald.org" "c:/Users/cwilliams/Dropbox/org/home/car.org" "c:/Users/cwilliams/Dropbox/org/health/triglycerides.org" "c:/Users/cwilliams/Dropbox/org/health/meditation.org" "c:/Users/cwilliams/Dropbox/org/health/ideas.org" "c:/Users/cwilliams/Dropbox/org/health/hygiene.org" "c:/Users/cwilliams/Dropbox/org/health/fitness.org" "c:/Users/cwilliams/Dropbox/org/health/doctor.org" "c:/Users/cwilliams/Dropbox/org/health/adrianna.org" "c:/Users/cwilliams/Dropbox/org/groceries.org" "c:/Users/cwilliams/Dropbox/org/gifts/me.org" "c:/Users/cwilliams/Dropbox/org/gifts/general.org" "c:/Users/cwilliams/Dropbox/org/gifts/adrianna.org" "c:/Users/cwilliams/Dropbox/org/games/lost_interest.org" "c:/Users/cwilliams/Dropbox/org/games/dungeon_overlord.org" "c:/Users/cwilliams/Dropbox/org/games/cooperative.org" "c:/Users/cwilliams/Dropbox/org/from-mobile.org" "c:/Users/cwilliams/Dropbox/org/friends.org" "c:/Users/cwilliams/Dropbox/org/finances/taxes.org" "c:/Users/cwilliams/Dropbox/org/finances/stock.org" "c:/Users/cwilliams/Dropbox/org/finances/reimbursements.org" "c:/Users/cwilliams/Dropbox/org/finances/phone.org" "c:/Users/cwilliams/Dropbox/org/finances/loans.org" "c:/Users/cwilliams/Dropbox/org/finances/deals.org" "c:/Users/cwilliams/Dropbox/org/finances/credit_cards.org" "c:/Users/cwilliams/Dropbox/org/finances/credit.org" "c:/Users/cwilliams/Dropbox/org/finances/budget.org" "c:/Users/cwilliams/Dropbox/org/finances/banks.org" "c:/Users/cwilliams/Dropbox/org/entertainment.org" "c:/Users/cwilliams/Dropbox/org/education.org" "c:/Users/cwilliams/Dropbox/org/devices.org" "c:/Users/cwilliams/Dropbox/org/checklists/travel.org" "c:/Users/cwilliams/Dropbox/org/career/phd.org" "c:/Users/cwilliams/Dropbox/org/career/open_source.org" "c:/Users/cwilliams/Dropbox/org/career/new_job.org" "c:/Users/cwilliams/Dropbox/org/career/blog.org" "c:/Users/cwilliams/Dropbox/org/career/advisory_board.org")))
  '(org-agenda-include-diary t)
+ '(org-agenda-ndays 1)
  '(org-agenda-skip-deadline-prewarning-if-scheduled t)
  '(org-agenda-skip-scheduled-if-done t)
  '(org-agenda-window-setup (quote current-window))
  '(org-archive-location "~/Dropbox/org/archive/%s_archive::")
+ '(org-deadline-warning-days 4)
  '(org-directory "~/Dropbox/org")
+ '(org-file-apps (quote ((auto-mode . emacs) ("\\.mm\\'" . default) ("\\.x?html?\\'" . default) ("\\.pdf\\'" . default) ("\\.ppt\\'" . default))))
  '(org-habit-show-habits-only-for-today nil)
- '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID="))))
+ '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID=") ("hermes" . "https://intranet.athenahealth.com/hermes/queue/view.esp?JOBID="))))
  '(org-log-done (quote time))
  '(org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
  '(org-modules (quote (org-bbdb org-bibtex org-docview org-gnus org-info org-jsinfo org-habit org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-checklist org-learn org-registry org2rem)))
- '(org-scheduled-past-days 1000000)
+ '(org-scheduled-past-days 1)
  '(paren-mode (quote paren) nil (paren))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(scroll-bar-mode nil)
@@ -73,6 +74,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(require 'find-lisp)
+(setq org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
 
 (defalias 'perl-mode 'cperl-mode)
 (push '("\\.diffrule\\'" . cperl-mode) auto-mode-alist)
