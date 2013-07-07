@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: classi
+# key: classi
+# --
+class ${1:name} < ${2:parent}
+  $0
+end

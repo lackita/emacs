@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: times
+# key: times
+# --
+times do
+$0
+end
