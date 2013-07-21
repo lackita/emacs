@@ -33,6 +33,7 @@
  '(exec-path (quote ("/usr/lib/lightdm/lightdm" "/usr/local/sbin" "/usr/local/bin" "/usr/sbin" "/usr/bin" "/sbin" "/bin" "/usr/games" "/usr/lib/emacs/23.3/i686-linux-gnu")))
  '(filesets-data (quote (("refresh" (:files "/plink:dev202.athenahealth.com:/home/cwilliams/archive/p4/prod/perllib/Athena/DevRefresh/Stackgroup.pm")) ("hermes" (:files "/plink:dev202.athenahealth.com:/home/cwilliams/archive/p4/intranet/scripts/qa/regression/hermes.pl" "/plink:dev202.athenahealth.com:/home/cwilliams/archive/p4/intranet/hermes/" "/plink:dev202.athenahealth.com:/home/cwilliams/archive/p4/intranet/perllib/Athena/Hermes/")) ("diffrules" (:files "/plink:dev202.athenahealth.com:archive/p4/prod/scripts/qa/diffrules/")) ("emacs" (:files "/home/cwilliams/.emacs")))))
  '(fill-column 80)
+ '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(icomplete-mode t)
  '(ido-max-directory-size 300000)
  '(indent-tabs-mode t)
@@ -41,13 +42,11 @@
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo)))
-									  ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO")
-									  ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO")
-									  ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
- '(org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
+ '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO") ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO") ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
+ '(org-agenda-files (find-lisp-find-files "~/Dropbox/org" ".org$"))
  '(org-agenda-include-diary t)
  '(org-agenda-skip-deadline-prewarning-if-scheduled t)
+ '(org-agenda-skip-scheduled-if-deadline-is-shown t)
  '(org-agenda-skip-scheduled-if-done t)
  '(org-agenda-window-setup (quote current-window))
  '(org-archive-location "~/Dropbox/org/archive/%s_archive::")
@@ -55,9 +54,11 @@
  '(org-habit-show-habits-only-for-today nil)
  '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID="))))
  '(org-log-done (quote time))
+ '(org-log-into-drawer t)
  '(org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
  '(org-modules (quote (org-bbdb org-bibtex org-docview org-gnus org-info org-jsinfo org-habit org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-checklist org-learn org-registry org2rem)))
- '(org-scheduled-past-days 1000000)
+ '(org-scheduled-past-days 1)
+ '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("Marmalade" . "http://marmalade-repo.org/packages/"))))
  '(paren-mode (quote paren) nil (paren))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(scroll-bar-mode nil)
@@ -68,14 +69,15 @@
  '(tab-width 4)
  '(tool-bar-mode nil)
  '(tramp-remote-path (quote (tramp-default-remote-path "/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin" "/local/bin" "/local/freeware/bin" "/local/gnu/bin" "/usr/freeware/bin" "/usr/pkg/bin" "/usr/contrib/bin" "/home/cwilliams/archive/p4/techops/coredev/bin" "/home/cwilliams/archive/perl")))
- '(user-mail-address "cwilliams@athenahealth.com")
- '(vc-git-program "C:\\RailsInstaller\\Git\\bin\\git.exe"))
+ '(user-mail-address "cwilliams@athenahealth.com"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; (setq org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
 
 (defalias 'perl-mode 'cperl-mode)
 (push '("\\.diffrule\\'" . cperl-mode) auto-mode-alist)
