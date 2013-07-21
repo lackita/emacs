@@ -1,5 +1,3 @@
-(require 'find-lisp)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -42,17 +40,22 @@
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo))) ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO") ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO") ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
- '(org-agenda-files (find-lisp-find-files "~/Dropbox/org" ".org$"))
+ '(org-agenda-custom-commands (quote (("n" "Agenda and all TODO's" ((agenda "") (alltodo)))
+				      ("w" "Work" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO")
+				      ("h" "Home" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO")
+				      ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))))
  '(org-agenda-include-diary t)
+ '(org-agenda-ndays 1)
  '(org-agenda-skip-deadline-prewarning-if-scheduled t)
  '(org-agenda-skip-scheduled-if-deadline-is-shown t)
  '(org-agenda-skip-scheduled-if-done t)
  '(org-agenda-window-setup (quote current-window))
  '(org-archive-location "~/Dropbox/org/archive/%s_archive::")
+ '(org-deadline-warning-days 4)
  '(org-directory "~/Dropbox/org")
+ '(org-file-apps (quote ((auto-mode . emacs) ("\\.mm\\'" . default) ("\\.x?html?\\'" . default) ("\\.pdf\\'" . default) ("\\.ppt\\'" . default))))
  '(org-habit-show-habits-only-for-today nil)
- '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID="))))
+ '(org-link-abbrev-alist (quote (("hydra" . "https://intranet.athenahealth.com/hydra/taskview.esp?ID=") ("wiki" . "https://intranet.athenahealth.com/wiki/node.esp?ID=") ("hermes" . "https://intranet.athenahealth.com/hermes/queue/view.esp?JOBID="))))
  '(org-log-done (quote time))
  '(org-log-into-drawer t)
  '(org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
@@ -77,7 +80,8 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; (setq org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
+(require 'find-lisp)
+(setq org-agenda-files (find-lisp-find-files "~/Dropbox/org" "\.org$"))
 
 (defalias 'perl-mode 'cperl-mode)
 (push '("\\.diffrule\\'" . cperl-mode) auto-mode-alist)
