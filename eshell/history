@@ -1,9 +1,3 @@
-git branch
-git push origin add_clues
-ls
-git clone https://github.com/lackita/arkhamhorror.git
-cd arkhamhorror/
-ls
 prove
 prove
 prove
@@ -11,6 +5,7 @@ prove
 prove
 prove
 prove
+perl -e 'use Data::Dumper;print Dumper [0..0]'
 prove
 prove
 prove
@@ -28,6 +23,18 @@ prove
 prove
 prove
 prove
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl -e "@foo = (1,2,3);pop @foo;use Data::Dumper;print Dumper \@foo"
+perl -e "@foo = (1,2,3);pop @foo;use Data::Dumper;print Dumper \@foo"
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
 prove
 prove
 prove
@@ -58,7 +65,12 @@ prove
 prove
 prove
 prove
+utest Bowling::Game
+utest Bowling::Game
 prove
+perl t/move_onto.t 
+perl t/move_onto.t 
+perl t/move_onto.t 
 prove
 prove
 prove
@@ -88,41 +100,29 @@ prove
 prove
 prove
 prove
-prove t/even_start_to_sequence.t 
-prove t/even_start_to_sequence.t 
 prove
-cd ..
 prove
 prove
 prove
 prove
 prove
-prove t/even_start_to_sequence.t 
-prove t/even_start_to_sequence.t 
-prove t/even_start_to_sequence.t 
-prove
-prove
-prove t/odd_start_to_sequence.t 
-perl t/odd_start_to_sequence.t 
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-prove
-perl t/sample_ranges.t 
-prove
-perl 3n_plus_one.pl 
-perl 3n_plus_one.pl 
-perl 3n_plus_one.pl sample_input.txt 
-cd ../..
 git add .
-git commit -am 'problem 100'
-git push origin master
+git commit -am 'problem 101 in the small style'
+git branch
+cd ../..
+cd ..
+cd
+cd /plink:lackita@lackita.zapto.org:/home/lackita/java_practice
+git add .
+git commit -am 'old version'
+cd 100
+ssh-keygen -i -f ~/.ssh/jayne.pub > ~/.ssh/jayne2.pub
+cd ../../..
+cd ../../Downloads/
+ls
+mv *.jar ../Documents/GitHub/practice/
+cd ../Downloads/GitHub/practice
+pwd
+cd ..
+cd Documents/GitHub/practice/
+ls

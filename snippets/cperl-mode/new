@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: new
+# key: new
+# --
+sub new {
+my ($class, $args) = @_;
+$args ||= {};
+$0return bless $args, $class;
+}
