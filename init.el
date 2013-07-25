@@ -59,5 +59,6 @@
 
 (require 'org-customizations)
 (require 'cperl-customizations)
-(require 'windows-customizations)
+(if (eq system-type 'windows-nt)
+	(require 'windows-customizations))
 (require 'experimental-customizations)
