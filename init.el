@@ -46,21 +46,18 @@
 								  (interactive)
 								  (revert-buffer nil t)))
 
+(mapcar (lambda (directory)
+		  (let ((default-directory (concat "~/.emacs.d/" directory)))
+			(normal-top-level-add-subdirs-to-load-path)
+			(push default-directory load-path)))
+		'("elisp" "elpa"))
 
-(let ((default-directory "~/.emacs.d/elisp/"))
-  (normal-top-level-add-subdirs-to-load-path))
-(push "~/.emacs.d/elisp/" load-path)
-(let ((default-directory "~/.emacs.d/elpa/"))
-  (normal-top-level-add-subdirs-to-load-path))
-(push "~/.emacs.d/elpa/" load-path)
-
-(global-set-key [f5] 'load-dev)
+(global-set-key [f5] (lambda () (require 'athena-customizations)))
 (global-set-key [f6] 'recompile)
 
 (global-hl-line-mode t)
 
 (require 'org-customizations)
 (require 'cperl-customizations)
-(require 'athena-customizations)
 (require 'windows-customizations)
 (require 'experimental-customizations)
