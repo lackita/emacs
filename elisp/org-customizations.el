@@ -2,9 +2,13 @@
 (require 'find-lisp)
 
 (setq org-agenda-custom-commands '(("n" "Agenda and all TODO's" ((agenda "") (alltodo)))
+								   ("b" "Beta Work Calendar" ((agenda "" ((org-agenda-ndays 1)
+																		  (org-agenda-tag-filter-preset '("+work"))
+																		  (org-agenda-entry-types '(:timestamp :sexp :deadline))))))
 								   ("w" "Work Calendar" ((agenda "" ((org-agenda-tag-filter-preset '("+work"))))))
 								   ("W" "Work Tasks" tags "+work-waiting-maybe-SCHEDULED>\"<now>\"/TODO")
-								   ("h" "Home Calendar" ((agenda "" ((org-agenda-tag-filter-preset '("-work"))))))
+								   ("h" "Home Calendar" ((agenda "" ((org-agenda-tag-filter-preset '("-work"))
+																	 (org-agenda-entry-types '(:timestamp :sexp :deadline))))))
 								   ("H" "Home Tasks" tags "-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO")
 								   ("c" "Couch" tags "+internet-adrianna-desktop-waiting-maybe-work-SCHEDULED>\"<now>\"/TODO"))
 	  org-agenda-include-diary t
