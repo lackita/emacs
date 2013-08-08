@@ -19,6 +19,8 @@
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
+ '(org-agenda-skip-scheduled-if-deadline-is-shown t)
+ '(org-scheduled-past-days 0)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("Marmalade" . "http://marmalade-repo.org/packages/"))))
  '(paren-mode (quote paren) nil (paren))
  '(safe-local-variable-values (quote ((encoding . utf-8))))

@@ -5,7 +5,7 @@
 									 (mc/mark-all-like-this)))
 
 (require 'ace-jump-mode)
-(define-key global-map (kbd "C-;") 'ace-jump-mode)
+(define-key global-map (kbd "C-;") 'ace-jump-char-mode)
 
 (fset 'block-comment
    [?\C-s ?# ?# ?# ?\C-a ?\C-k ?\C-  ?\C-s ?d ?e ?s ?c ?\C-a ?\C-n ?\C-w ?\C-s ?# ?# ?# ?\C-a ?\C-k ?\C-x ?\C-x ?\M-% ?\C-i ?\C-m ?  ?\C-m ?!])
