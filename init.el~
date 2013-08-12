@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -16,7 +17,6 @@
  '(indent-tabs-mode t)
  '(isearch-resume-in-command-history t)
  '(ispell-program-name "aspell" t)
- '(jabber-account-list (quote (("cwilliams@athenahealth.com" (:network-server . "chat.athenahealth.com")))))
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
