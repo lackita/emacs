@@ -10,9 +10,9 @@
 (setq org-agenda-custom-commands `(,(calendar-command "w" "Work Calendar" "+work")
 								   ,(tags-command "W" "Work Tasks" "+work")
 								   ,(calendar-command "h" "Home Calendar" "-work")
-								   ,(tags-command "H" "Home Tasks" "-internet-errands-outside-netbook")
+								   ,(tags-command "H" "Home Tasks" "-work-internet-errands-outside-netbook")
 								   ,(tags-command "O" "Outdoor Tasks" "outside")
-								   ,(tags-command "i" "Internet Tasks" "+internet-work")
+								   ,(tags-command "i" "Internet Tasks" "+internet-adrianna-work")
 								   ("n" "Netbook" tags "netbook"))
 	  org-agenda-include-diary t
 	  org-agenda-ndays 1
