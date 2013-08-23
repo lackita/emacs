@@ -16,11 +16,10 @@
  '(indent-tabs-mode t)
  '(isearch-resume-in-command-history t)
  '(ispell-program-name "aspell" t)
+ '(jabber-account-list (quote (("cwilliams@athenahealth.com" (:network-server . "chat.athenahealth.com")))))
  '(kill-whole-line t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(org-agenda-skip-scheduled-if-deadline-is-shown t)
- '(org-scheduled-past-days 0)
  '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("Marmalade" . "http://marmalade-repo.org/packages/"))))
  '(paren-mode (quote paren) nil (paren))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
@@ -36,11 +35,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-(set-default buffer-file-coding-system 'utf-8-unix)
-(set-default-coding-systems 'utf-8-unix)
-(prefer-coding-system 'utf-8-unix)
-(set-default default-buffer-file-coding-system 'utf-8-unix)
 
 (put 'narrow-to-region 'disabled nil)
 
