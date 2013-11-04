@@ -21,8 +21,8 @@
                          (split-string (match-string 2 file-name)
                                  "/") "::") )))))
 
-(let* ((dev (concat "dev202"))
-     (p4-home (concat "/plink:" dev ":~/archive/p4/"))
+(let* ((dev (concat "dev202.athenahealth.com"))
+     (p4-home (concat "/ssh:" dev ":~/archive/p4/"))
      (path (concat p4-home "techops/coredev/emacs/")))
   (load-library (concat path "dml"))
   (load-file (concat path "vc-p4.el"))
