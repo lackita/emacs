@@ -18,6 +18,6 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 
-;; (require 'editortools)
+(require 'editortools)
 
 (provide 'experimental-customizations)

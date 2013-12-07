@@ -60,7 +60,8 @@
 		'("elisp" "elpa"))
 
 (global-set-key [f5] (lambda () (interactive) (require 'athena-customizations)))
-(require 'athena-customizations)
+(when (string-match-p "\\(^dev\\|^regression\\|^stage\\).*[.]athenahealth[.]com$" system-name)
+  (require 'athena-customizations))
 (global-set-key [f6] 'recompile)
 
 (global-hl-line-mode t)
@@ -70,4 +71,3 @@
 (if (eq system-type 'windows-nt)
 	(require 'windows-customizations))
 (require 'experimental-customizations)
-(require 'editortools)
