@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: tpackage
+# key: tpackage
+# --
+package $1_Test;
+use strict;
+use warnings;
+no warnings 'uninitialized';
+
+use AthenaTest;
+use $1;
+
+$0
+
+1;

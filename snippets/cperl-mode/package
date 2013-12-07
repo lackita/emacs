@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: package
+# key: package
+# --
+package ${1:Package};
+use strict;
+use warnings;
+no warnings 'uninitialized';
+
+$0
+
+1;
